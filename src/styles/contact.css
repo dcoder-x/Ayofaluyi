@@ -1,0 +1,104 @@
+#contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5f6162;
+    scroll-snap-align: end;
+    padding: 4rem 0;
+}
+.title{
+    padding: 2rem;
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+}
+#contact .content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.contact-image,.contact-form{
+    width: 100%;
+    height: 100%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 3rem 0;
+}
+.contact-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contact-image canvas{
+    background-color: #0F90E5;
+}
+.contact-image img{
+    height: 90%;
+    border-radius:50%;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    background-color: rgba(255, 255, 255, 0.175);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 0px 15px #3d7fa248 inset,
+    -2px 0px 15px #5f616247 inset,
+    2px 0px 20px #81818148  ;
+    transition: 1s ease-in-out;
+    width: 90%;
+    border-radius: 20px;
+}
+.contact-form input{
+    height: 3rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    background-color: rgba(240, 255, 255, 0.178);
+    border: #0f8fe59a 1px solid;
+}
+.cv-button{
+    background-color: #0F90E5;
+    color: white;
+    width: 7rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+.message{
+    min-height: 5rem;
+}
+#contact footer{
+    background: url(../assets/banner04.svg);
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(36, 102, 215);
+    font-size: 30px;
+}
+@media screen and (max-width:900px) {
+    #contact .content{
+        flex-direction: column;
+    }
+    #contact{
+        height: auto;
+    }
+    .contact-image{
+        position: absolute;
+    }
+    .title{
+        margin: 4rem;
+    }
+}

@@ -1,0 +1,101 @@
+#projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+    padding: 6rem 0;
+}
+.info,.image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+}
+.info{
+    padding-left:10% ;
+    justify-content: space-evenly;
+    animation: slide 2s 1 ease-in-out;
+    font-weight: 400;
+}
+@keyframes slide {
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.name{
+    font-size: 45px;
+    font-weight: 400;
+}
+#projects .image{
+    width: 50%;
+    align-items: center;
+    padding: 3rem;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    transform: translate(40vw,50vh);
+}
+.buttons div{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: rgba(128, 128, 128, 0.408) 2px 2px 20px;
+}
+#projects button{
+    width: 150px;
+    padding: .7rem 0;
+    background-color: #0F90E5;
+    color: white;
+    border-radius: 5px;
+}
+@media screen and (max-width:900px) {
+    #projects{
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 3vw;
+    }
+    #projects .image{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    #projects .image img{
+        width: 50%;
+    }
+    #projects .info{
+        width: auto;
+        height: 50vh;
+        align-items: center;
+        padding: 0;
+    }
+    .title{
+        margin: 0;
+        padding: 0;
+        font-size: 7vw;
+    }
+    .buttons{
+        position: absolute;
+        display: flex;
+        transform: translate(0);
+        margin-top: -25%;
+    }
+    #projects .name{
+        font-size: 5vw;
+    }
+}
