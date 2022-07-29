@@ -1,8 +1,8 @@
 
 import './App.css'
-import About from './components/about'
+import About from './components/About'
 import Contact from './components/contact'
-import Hero from './components/hero'
+import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Projects from './components/Projects'
 import Services from './components/Services'
