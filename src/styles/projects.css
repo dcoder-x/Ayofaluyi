@@ -18,17 +18,9 @@
 .info{
     padding-left:10% ;
     justify-content: space-evenly;
-    animation: slide 2s 1 ease-in-out;
     font-weight: 400;
 }
-@keyframes slide {
-    from{
-        transform: translateX(-20%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
+
 .name{
     font-size: 45px;
     font-weight: 400;
@@ -37,6 +29,28 @@
     width: 50%;
     align-items: center;
     padding: 3rem;
+}
+.slideRight{
+    animation: slideright 2s 1 ease-in-out;
+}
+@keyframes slideright {
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.slideLeft{
+    animation: slideleft ;
+}
+@keyframes slideleft {
+    from{
+        transform: translateX(20%);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 .buttons{
     position: absolute;

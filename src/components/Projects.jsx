@@ -5,13 +5,21 @@ import styles from '../styles/projects.css'
 const Projects = () => {
     const [slideNum, setSlideNum] = useState(0)
     useEffect(()=>{
-        const leftbtn = document.querySelector(".leftbtn")
-        const rightbtn = document.querySelector(".rightbtn")
-        if (slideNum<1) {
-            leftbtn.disabled
-        }
+        const buttons = document.querySelectorAll(".buttons div"),
+        image = document.querySelector(".image"),
+        info = document.querySelector(".info")
 
-    })
+        buttons.forEach(btn => {
+            btn.onclick=()=>{
+                image.classList.add('slideRight')
+                info.classList.add('slideLeft')
+                console.log(btn,image)
+
+            }
+        });
+                
+
+    },[])
   return (
     <div id='projects'>
         <div className="info">

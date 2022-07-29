@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-// import { Spline } from 'react-spline'
 import styles from '../styles/services.css'
-import Spline from '@splinetool/react-spline';
+import { images } from '../data/images';
 
 const Services = () => {
 
@@ -13,7 +12,7 @@ const Services = () => {
     </div>
     <div className="content">
       <div className="service">
-        <img src="src\assets\background minatures\presentation.png" alt="" />
+        <img src={images.backend} alt="" />
         <h1 className="service-name">
           Web development
         </h1>
@@ -23,7 +22,7 @@ const Services = () => {
         </h4>
       </div>
       <div className="service">
-        <img src="src\assets\background minatures\app-development.png" alt="" />
+        <img src={images.appdev} alt="" />
         <h1 className="service-name">
           Mobile development
         </h1>
@@ -43,9 +42,9 @@ const Services = () => {
         </h4>
       </div> */}
       <div className="service">
-        <img src="src\assets\background minatures\backend.png" alt="" />
+        <img src={images.web3d} alt="" />
         <h1 className="service-name">
-          Backend development
+          website 3D
         </h1>
         <h4 className="service-desc">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe odio 

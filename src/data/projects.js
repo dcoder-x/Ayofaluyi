@@ -1,9 +1,13 @@
+import { banner } from "./images"
+
+
+
 export const projects = [
     {
         name:'NFTEA',
         role:'Frontend developer',
         type:'Mobile App & Website',
-        banner:'src/assets/banner/feature.png',
+        banner:banner.feature,
         link:'',
         background:""
     },
@@ -11,7 +15,7 @@ export const projects = [
         name:'SHOPSITE',
         role:'Fullstack developer',
         type:'Website',
-        banner:'src/assets/banner/home_cards.png',
+        banner:banner.home_cards,
         link:'',
         background:""
     },
@@ -19,7 +23,7 @@ export const projects = [
         name:'HTMLREUSABLE',
         role:'Author',
         type:'JS Library',
-        banner:'src/assets/banner/home_hero.png',
+        banner:banner.home_hero,
         link:'',
         background:""
     },
@@ -27,7 +31,7 @@ export const projects = [
         name:'CLASSIC EMPIRE',
         role:'Designer & Frontend Developer',
         type:'Website',
-        banner:'src/assets/banner/mockup.png',
+        banner:banner.mockup,
         link:'',
         background:""
     },
@@ -35,7 +39,7 @@ export const projects = [
         name:'Webber',
         role:'Fullstack developer',
         type:'website',
-        banner:'src/assets/banner/scene.png',
+        banner:banner.scene,
         link:'',
         background:""
     },

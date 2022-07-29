@@ -89,4 +89,7 @@
         width: 100%;
         padding: 1rem;
     }
+    .about-image{
+        height: 50vh;
+    }
 }

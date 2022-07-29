@@ -1,4 +1,5 @@
 import React from 'react'
+import { images } from '../data/images'
 import styles from '../styles/skills.css'
 
 const Skills = () => {
@@ -20,7 +21,7 @@ const Skills = () => {
         <section className="skills">
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\gif\animation_500_l626if05.gif" alt="" />
+                    <img src={images.react} alt="" />
                 </div>
                 <h3 className="skill-name">
                     React Js & Native
@@ -28,7 +29,7 @@ const Skills = () => {
             </div>
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\gif\animation_500_l629e4xq.gif" alt="" />
+                    <img src={images.css} alt="" />
                 </div>
                 <h3 className="skill-name">
                     Tailwind CSS
@@ -36,7 +37,7 @@ const Skills = () => {
             </div>
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\gif\animation_500_l62a40uy.gif" alt="" />
+                    <img src={images.figma} alt="" />
                 </div>
                 <h3 className="skill-name">
                     Figma
@@ -44,7 +45,7 @@ const Skills = () => {
             </div>
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\gif\animation_500_l628xc62.gif" alt="" />
+                    <img src={images.node} alt="" />
                 </div>
                 <h3 className="skill-name">
                     Node JS
@@ -52,7 +53,7 @@ const Skills = () => {
             </div>
             <div className="skill">
                 <div className="image" style={{padding:'.4rem 0',width:'50%'}} >
-                    <img src="src\assets\gif\expressjs.png" alt="" />
+                    <img src={images.express} alt="" />
                 </div>
                 <h3 className="skill-name">
                     Express JS
@@ -60,7 +61,7 @@ const Skills = () => {
             </div>
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\gif\animation_500_l6287yit.gif" alt="" />
+                    <img src={images.mongo} alt="" />
                 </div>
                 <h3 className="skill-name">
                     MongoDB

@@ -180,6 +180,10 @@
     #home{
         flex-direction: column;
         justify-content: space-evenly;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background: url(../assets/banner02.svg),url(../assets/portraitanim.png);
     }
     .portrait-image{
         height: 100vh;

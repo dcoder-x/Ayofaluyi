@@ -3,6 +3,7 @@ import styles from '../styles/hero.css'
 import portrait from '../assets/portrait.png'
 import { Icon } from '@iconify/react';
 import Spline from '@splinetool/react-spline';
+import { images } from '../data/images';
 
 
 const Hero = () => {
@@ -38,7 +39,16 @@ const Hero = () => {
             basicInfo.style.transform=`rotateX(0deg) rotateY(0deg)`
         })
        window.onload=()=>{
-            const portrait = document.querySelector('.portrait-image')
+            const portrait = document.querySelector('.portrait-image'),
+            home = document.querySelector('#home')
+            const spline =document.querySelector('.spline')
+            setTimeout(() => {
+                if (portrait.clientHeight==150) {
+                    spline.style.height=`100vh`
+                    console.log(spline)
+                }
+                
+            }, 1000);
             setTimeout(()=>{
                 console.log(portrait.clientHeight,portrait.clientWidth)
 
@@ -53,7 +63,7 @@ const Hero = () => {
                     setSpline(true)
                     console.log(isSpline)
             }
-            },3000)
+            },5000)
           
        }
   
@@ -84,7 +94,7 @@ const Hero = () => {
     
   return (
     <div id='home'>
-        <img src="src\assets\background minatures\world.png" alt="" className="bg-earth" />
+        <img src={images.world} alt="" className="bg-earth" />
         {/* <img src="src\assets\portraitanim.png" alt="" className="bg-modeling" /> */}
         <div className="home-sections hello">
             <div className="basic-info">
@@ -126,7 +136,7 @@ const Hero = () => {
         <div className="home-sections skills">
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\background minatures\app-development.png" alt="" />
+                    <img src={images.appdev} alt="" />
                 </div>
                 <div className="skill-name">
                     Mobile development
@@ -134,7 +144,7 @@ const Hero = () => {
             </div>
             <div className="skill ">
                 <div className="image shadow-mblack-lighter">
-                    <img src="src\assets\background minatures\layers.png" alt="" />
+                    <img src={images.webdev} alt="" />
                 </div>
                 <div className="skill-name">
                     Web development
@@ -142,7 +152,7 @@ const Hero = () => {
             </div>
             <div className="skill">
                 <div className="image">
-                    <img src="src\assets\background minatures\3d (1).png" alt="" />
+                    <img src={images.web3d} alt="" />
                 </div>
                 <div className="skill-name">
                     Web 3D
@@ -153,7 +163,7 @@ const Hero = () => {
         <div className='portrait-image  absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
             {/* <img src={portrait} alt="" className="portrait-image  absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2"/> */}
             
-                <Spline className='spline'   scene="https://prod.spline.design/4JrvSFFzWjQ1YarT/scene.splinecode" />
+                <Spline className='spline' style={{height:"100%",width:'100%'}}  scene="https://prod.spline.design/4JrvSFFzWjQ1YarT/scene.splinecode" />
                 
 
         </div>
