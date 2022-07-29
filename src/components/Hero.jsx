@@ -43,11 +43,11 @@ const Hero = () => {
             home = document.querySelector('#home')
             const spline =document.querySelector('.spline')
             setTimeout(() => {
-                if (portrait.clientHeight==150||portrait.clientWidth==300) {
+                
                     spline.style.height=`100vh`
                     spline.style.width=`100%`
                     console.log(spline)
-                }
+               
                 
             }, 1000);
             setTimeout(()=>{
