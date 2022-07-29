@@ -45,6 +45,8 @@ const Hero = () => {
             setTimeout(() => {
                 
                     spline.style.height=`100vh`
+                    spline.style.display=`block`
+                    
                     spline.style.width=`100%`
                     console.log(spline)
                
@@ -164,7 +166,7 @@ const Hero = () => {
         <div className='portrait-image  absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
             {/* <img src={portrait} alt="" className="portrait-image  absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2"/> */}
             
-                <Spline className='spline' style={{height:"100%",width:'100%'}}  scene="https://prod.spline.design/4JrvSFFzWjQ1YarT/scene.splinecode" />
+                <Spline className='spline' style={{height:"100%",width:'100%', display:"block"}}  scene="https://prod.spline.design/4JrvSFFzWjQ1YarT/scene.splinecode" />
                 
 
         </div>
